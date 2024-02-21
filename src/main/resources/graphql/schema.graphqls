@@ -3,6 +3,9 @@ type Query {
     findStudentById(studentId:String):Student,
 
     findAllStudents:[Student]
+
+    findPersonById(personId:Int):Person
+
 }
 
 type Student{
