@@ -1,0 +1,12 @@
+# consultas de query
+type Query {
+    findStudentById(studentId:String):Student,
+    findAllStudents:[Student]
+}
+
+extend type Mutation
+{
+    createStudent(inputStudent:InputStudent):Student,
+    deleteStudent(studentId:String):String
+}
+

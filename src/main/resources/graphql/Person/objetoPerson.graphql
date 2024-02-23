@@ -1,0 +1,7 @@
+type Person{
+    personId:ID,
+    firstName:String,
+    secondName:String,
+    firstLastName:String,
+    secondLastName:String
+}

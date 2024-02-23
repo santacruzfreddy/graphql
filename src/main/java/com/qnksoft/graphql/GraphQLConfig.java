@@ -4,7 +4,6 @@ import graphql.GraphQL;
 import graphql.schema.GraphQLSchema;
 import graphql.schema.idl.*;
 import org.springframework.context.annotation.Bean;
-import org.springframework.context.annotation.Configuration;
 import org.springframework.core.io.ClassPathResource;
 
 import java.io.IOException;
@@ -23,7 +22,7 @@ public class GraphQLConfig {
         TypeDefinitionRegistry typeRegistry = new TypeDefinitionRegistry();
 
         // Cargar todos los archivos GraphQL
-        typeRegistry.merge(schemaParser.parse(new ClassPathResource("graphql/person.graphqls").getFile()));
+        typeRegistry.merge(schemaParser.parse(new ClassPathResource("graphql/Person/person.graphqls").getFile()));
         //typeRegistry.merge(schemaParser.parse(new ClassPathResource("graphql/schema2.graphqls").getFile()));
         // Agrega más archivos según sea necesario
 
