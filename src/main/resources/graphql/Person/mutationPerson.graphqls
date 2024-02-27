@@ -1,0 +1,9 @@
+extend type Mutation
+{
+    createPerson(inputStudent:InputStudent):Person,
+    deletePerson(personId:String):String,
+    updatePerson(inputStudent:InputStudent):Person,
+}
+
+
+

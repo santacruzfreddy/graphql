@@ -1,10 +1,10 @@
 # consultas de query
-type Query {
+ type Query {
     findStudentById(studentId:String):Student,
     findAllStudents:[Student]
 }
 
-extend type Mutation
+ type Mutation
 {
     createStudent(inputStudent:InputStudent):Student,
     deleteStudent(studentId:String):String

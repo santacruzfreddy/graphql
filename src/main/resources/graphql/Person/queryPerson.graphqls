@@ -1,0 +1,4 @@
+extend type Query {
+    findPersonById(personId:String):Person,
+    findAllPerson:[Person]
+}

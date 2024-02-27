@@ -1,11 +1,10 @@
-package com.qnksoft.graphql.inputsGraphql;
+package com.qnksoft.graphql.person.application.inputs;
 
 import lombok.Data;
 
 @Data
-public class InputStudent {
-   
-    private  Long id;
+public class InputPerson {
+    private  Long personId;
     private String name;
     private    String lastName;
     private Integer age;
