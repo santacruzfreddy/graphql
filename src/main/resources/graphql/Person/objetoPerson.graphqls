@@ -1,7 +1,41 @@
-type Person{
-    personId:ID,
-    firstName:String,
-    secondName:String,
-    firstLastName:String,
+interface Person {
+    personId:String
+    identification:String
+    firstName:String
+    secondName:String
+    firstLastName:String
     secondLastName:String
+    email:String
+    phone:String
+    address:String
 }
+
+type Employee implements Person{
+    personId:String
+    identification:String
+    firstName:String
+    secondName:String
+    firstLastName:String
+    secondLastName:String
+    email:String
+    phone:String
+    address:String
+    job: String
+}
+
+input InputPerson {
+    personId:String
+    identification:String
+    firstName:String
+    secondName:String
+    firstLastName:String
+    secondLastName:String
+    email:String
+    phone:String
+    address:String
+}
+
+extend input InputPerson input InputEmployee {
+    job: String
+}
+
