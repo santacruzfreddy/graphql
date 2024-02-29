@@ -28,6 +28,7 @@ public class StudentController {
         return iStudentServices.findById(studentId);
     }
 
+
     @QueryMapping(name = "findAllStudents")
     public List<Student> findAll()
     {

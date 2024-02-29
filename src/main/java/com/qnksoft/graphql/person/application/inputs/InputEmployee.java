@@ -1,10 +1,32 @@
 package com.qnksoft.graphql.person.application.inputs;
 
+import lombok.AllArgsConstructor;
+import lombok.Builder;
 import lombok.Data;
+import lombok.NoArgsConstructor;
 
 @Data
-public class InputEmployee extends InputPerson{
+@NoArgsConstructor
+@AllArgsConstructor
+@Builder
+public class InputEmployee {
+    Integer personId;
+
+    String identification;
+
+    String firstName;
+
+    String secondName;
+
+    String firstLastName;
+
+    String secondLastName;
+
+    String email;
+
+    String phone;
+
+    String address;
 
     String job;
-
 }

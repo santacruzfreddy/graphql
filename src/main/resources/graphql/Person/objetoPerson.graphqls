@@ -35,7 +35,17 @@ input InputPerson {
     address:String
 }
 
-extend input InputPerson input InputEmployee {
+input InputEmployee {
+    personId:String
+    identification:String
+    firstName:String
+    secondName:String
+    firstLastName:String
+    secondLastName:String
+    email:String
+    phone:String
+    address:String
     job: String
 }
+
 
