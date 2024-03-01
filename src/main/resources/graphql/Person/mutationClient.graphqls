@@ -1,0 +1,13 @@
+extend type Mutation
+{
+    createPerson(inputPerson:InputPerson):Company,
+    deletePerson(personId:String):String,
+    updatePerson(inputPerson:InputPerson): Person,
+    
+    createCompany(inputCompany:InputCompany):Company,
+    deleteCompany(companyId:String):String,
+    updateCompany(inputCompany:InputCompany):Company,
+}
+
+
+

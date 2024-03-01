@@ -1,9 +1,0 @@
-extend type Mutation
-{
-    createEmployee(inputEmployee:InputEmployee):Employee,
-    deleteEmployee(personId:String):String,
-    updateEmployee(inputStudent:InputStudent):Person,
-}
-
-
-

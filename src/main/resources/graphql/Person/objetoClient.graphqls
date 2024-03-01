@@ -1,4 +1,4 @@
-interface Person {
+interface Company {
     personId:String
     identification:String
     firstName:String
@@ -10,17 +10,20 @@ interface Person {
     address:String
 }
 
-type Employee implements Person{
-    personId:String
-    identification:String
-    firstName:String
-    secondName:String
-    firstLastName:String
-    secondLastName:String
-    email:String
-    phone:String
-    address:String
-    job: String
+interface Person {
+     personId:Int
+     observation:String    
+     email:String
+     phone:String
+     address:String
+     latitude:Int
+     length:Int
+    
+     identification:String
+     firstName: String
+     secondName:String
+     firstLastName:String
+     secondLastName:String
 }
 
 input InputPerson {
@@ -35,9 +38,9 @@ input InputPerson {
     address:String
 }
 
-input InputEmployee {
-    personId:String
-    identification:String
+input InputCompany {
+    companyId:String
+    RUC:String
     firstName:String
     secondName:String
     firstLastName:String
@@ -45,7 +48,6 @@ input InputEmployee {
     email:String
     phone:String
     address:String
-    job: String
 }
 
 

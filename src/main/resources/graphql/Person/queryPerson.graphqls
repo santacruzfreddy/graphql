@@ -1,7 +1,0 @@
-extend type Query {
-    findPersonById(personId:String):Person,
-
-    findEmployeeByIdentification(identification:String):Employee,
-
-    findAllPerson:[Person]
-}

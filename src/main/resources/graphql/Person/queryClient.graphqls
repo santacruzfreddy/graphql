@@ -1,0 +1,15 @@
+extend type Query {
+    findPersonById(personId:String): Person,
+
+    findPersonByIdentification(identification:String):Person,
+
+    findAllPerson:[Person]
+
+
+
+    findCompanyById(personId:String): Company,
+
+    findCompanyByRUC(RUC:String):Company,
+
+    findAllCompany:[Company]
+}
