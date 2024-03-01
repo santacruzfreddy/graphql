@@ -1,8 +1,5 @@
 package com.qnksoft.graphql.client.domain.Enum;
 
-import lombok.Data;
-
-
 public enum TypeOfTaxPayer
 {
     NATURALPERSON("Persona natural"),

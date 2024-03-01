@@ -3,9 +3,6 @@ package com.qnksoft.graphql.client.interfaces.api;
 import com.qnksoft.graphql.client.application.PersonServiceInterface;
 import com.qnksoft.graphql.client.application.inputs.InputPerson;
 import com.qnksoft.graphql.client.domain.model.Person;
-import com.qnksoft.graphql.person.application.EmployeeServiceInterface;
-import com.qnksoft.graphql.person.application.inputs.InputEmployee;
-import com.qnksoft.graphql.person.domain.model.Employee;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.graphql.data.method.annotation.Argument;
 import org.springframework.graphql.data.method.annotation.MutationMapping;
@@ -19,10 +16,17 @@ public class PersonController {
     PersonServiceInterface personServiceInterface;
 
     @MutationMapping(name = "createPerson")
-    public Person createPerson(@Argument(name = "inputPerson") InputPerson inputPerson)
-    {
+    public Person createPerson(@Argument(name = "inputPerson") InputPerson inputPerson) throws Exception {
         return personServiceInterface.createPerson(inputPerson);
     }
+
+    @MutationMapping(name = "updatePerson")
+    public Person updatePerson(@Argument(name = "inputPerson") InputPerson inputPerson) throws Exception {
+        return personServiceInterface.createPerson(inputPerson);
+    }
+
+
+
     @QueryMapping(name = "findPersonByIdentification")
     public Person findPersonByIdentification(@Argument(name = "identification") String identification)
     {

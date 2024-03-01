@@ -1,9 +1,5 @@
 package com.qnksoft.graphql.client.application.inputs;
-
-import com.qnksoft.graphql.person.domain.Enum.TypeOfTaxPayer;
-import jakarta.persistence.Column;
-import jakarta.persistence.EnumType;
-import jakarta.persistence.Enumerated;
+import com.qnksoft.graphql.client.domain.Enum.TypeOfTaxPayer;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;

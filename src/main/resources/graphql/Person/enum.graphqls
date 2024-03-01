@@ -1,0 +1,5 @@
+enum TypeOfTaxPayer {
+    NATURALPERSON,
+    LEGALPERSON,
+    SOCIETIES
+}

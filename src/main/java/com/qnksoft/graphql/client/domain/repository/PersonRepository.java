@@ -4,8 +4,10 @@ import com.qnksoft.graphql.client.domain.model.Person;
 import org.springframework.data.repository.CrudRepository;
 import org.springframework.stereotype.Repository;
 
-@Repository
-public interface PersonRepository extends CrudRepository<Person,Long> {
+import java.util.Optional;
 
-    Person findByIdentification(String identification);
+@Repository
+public interface PersonRepository extends CrudRepository<Person,Integer> {
+
+    Optional<Person> findByIdentification(String identification);
 }

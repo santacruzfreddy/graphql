@@ -1,6 +1,6 @@
 package com.qnksoft.graphql.client.domain.model;
 
-import com.qnksoft.graphql.person.domain.Enum.TypeOfTaxPayer;
+import com.qnksoft.graphql.client.domain.Enum.TypeOfTaxPayer;
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.EnumType;

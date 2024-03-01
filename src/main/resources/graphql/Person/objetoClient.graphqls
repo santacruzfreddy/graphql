@@ -1,50 +1,62 @@
-interface Company {
-    personId:String
-    identification:String
-    firstName:String
-    secondName:String
-    firstLastName:String
-    secondLastName:String
+type Company {
+    companyId:String
+    RUC:String
+    razonSocial:String
+
+    observation:String
+    latitude:Int
+    length:Int
+    typeOfTaxPayer: TypeOfTaxPayer
+
     email:String
     phone:String
     address:String
 }
 
-interface Person {
-     personId:Int
-     observation:String    
-     email:String
-     phone:String
-     address:String
-     latitude:Int
-     length:Int
-    
-     identification:String
-     firstName: String
-     secondName:String
-     firstLastName:String
-     secondLastName:String
+type Person {
+    personId:Int
+    observation:String
+    latitude:Int
+    length:Int
+    typeOfTaxPayer: TypeOfTaxPayer
+    email:String
+    phone:String
+    address:String
+
+    identification:String
+    firstName: String
+    secondName:String
+    firstLastName:String
+    secondLastName:String
 }
 
 input InputPerson {
-    personId:String
-    identification:String
-    firstName:String
-    secondName:String
-    firstLastName:String
-    secondLastName:String
+    personId:Int
+    observation:String
+    latitude:Int
+    length:Int
+    typeOfTaxPayer: TypeOfTaxPayer
     email:String
     phone:String
     address:String
+
+    identification:String
+    firstName: String
+    secondName:String
+    firstLastName:String
+    secondLastName:String
 }
 
 input InputCompany {
     companyId:String
     RUC:String
-    firstName:String
-    secondName:String
-    firstLastName:String
-    secondLastName:String
+    razonSocial:String
+
+    observation:String
+    latitude:Int
+    length:Int
+    typeOfTaxPayer: TypeOfTaxPayer
+
     email:String
     phone:String
     address:String

@@ -1,11 +1,9 @@
-extend type Query {
+type Query {
     findPersonById(personId:String): Person,
 
     findPersonByIdentification(identification:String):Person,
 
     findAllPerson:[Person]
-
-
 
     findCompanyById(personId:String): Company,
 

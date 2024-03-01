@@ -17,4 +17,6 @@ public interface PersonMapper {
     //@InheritInverseConfiguration
     Person inputPersonToPerson(InputPerson inputPerson);
 
+    Person inputPersonToPersonUpdate(InputPerson inputPerson);
+
 }
